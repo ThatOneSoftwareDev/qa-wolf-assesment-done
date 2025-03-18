@@ -41,9 +41,7 @@ function newestToOldestCheck(array){
     const date1 = array[i]
     const date2 = array[i + 1]
 
-    if(date1 >= date2){
-      console.log('date1 is earlier than date2');
-    }else{
+    if(!(date1 >= date2)){
       return false
     }
   }
